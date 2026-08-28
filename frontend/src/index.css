@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@media (prefers-reduced-motion: no-preference) {
+  .wterm .term-cursor {
+    animation: cursor-fade 0.8s ease-in-out infinite !important;
+  }
+} 
+
+@keyframes cursor-fade {
+  0%, 100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
